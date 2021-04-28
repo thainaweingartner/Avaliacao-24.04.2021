@@ -18,12 +18,12 @@ public class SessionDAO {
                 "movieId BIGINT NOT NULL," +
                 "cinemaId BIGINT NOT NULL," +
                 "room VARCHAR(20) NOT NULL," +
-                "chairs INT NOT NULL,," +
+                "chairs INT NOT NULL," +
                 "price VARCHAR(20) NOT NULL," +
                 "CONSTRAINT fk_idMovie FOREIGN KEY (movieId)" +
                 "REFERENCES movie(movieId)," +
                 "CONSTRAINT fk_idCinema FOREIGN KEY (cinemaId)" +
-                "REFERENCES cinema(cinemaId)" +
+                "REFERENCES cinema(cineId)" +
                 ");";
 
         Connection connection = ConnectionFactory.getConnection();
